@@ -1,0 +1,10 @@
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# Claude Code local state, if the repo is ever opened as a project
+.claude/settings.local.json
