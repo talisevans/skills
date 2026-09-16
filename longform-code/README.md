@@ -40,18 +40,21 @@ Examples are given in TypeScript, Python and PHP. The rules apply to any languag
 
 ## Install
 
-Skills are a folder containing a `SKILL.md`. Put this folder where Claude Code looks for them.
+This skill lives in the [talisevans/skills](https://github.com/talisevans/skills) collection.
+Skills are a folder containing a `SKILL.md`; put the folder where Claude Code looks for them.
 
 **For every project on your machine:**
 
 ```bash
-git clone https://github.com/<you>/longform-code.git ~/.claude/skills/longform-code
+git clone https://github.com/talisevans/skills.git
+cp -r skills/longform-code ~/.claude/skills/
 ```
 
 **For one project only** (commit it so the whole team gets it):
 
 ```bash
-git clone https://github.com/<you>/longform-code.git .claude/skills/longform-code
+git clone https://github.com/talisevans/skills.git
+cp -r skills/longform-code .claude/skills/
 ```
 
 Claude Code picks the skill up on the next session. Check with `/longform-code` at the prompt.
@@ -105,4 +108,4 @@ skill applies.
 
 ## Licence
 
-MIT.
+MIT, with the rest of the [skills](https://github.com/talisevans/skills) collection.

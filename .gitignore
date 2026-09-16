@@ -1,4 +1,16 @@
+# Skills kept private or belonging to others; only the listed skills are published
 caveman
 grilling
 domain-modeling
 grill-with-docs
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
+
+# Claude Code local state, if the repo is ever opened as a project
+.claude/settings.local.json
