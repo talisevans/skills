@@ -14,3 +14,6 @@ Thumbs.db
 
 # Claude Code local state, if the repo is ever opened as a project
 .claude/settings.local.json
+
+# remove synced - local copy of Claude downloads
+synced

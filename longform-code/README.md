@@ -26,15 +26,18 @@ for (const user of users) {
 }
 ```
 
-The four rules, in full in [`SKILL.md`](SKILL.md):
+The five rules, in full in [`SKILL.md`](SKILL.md):
 
 1. **Long form over condensed.** Loops are multi-line. No chains longer than two calls. No nested
-   ternaries. Intermediate values get names. Small functions with one job.
+   ternaries. Intermediate values get names. Steps laid out inside one function.
 2. **A comment above every block.** One line, plain English, what the block does. Docstrings on
    every function and class. Never a changelog.
 3. **Sections with banner headings.** Files are broken into titled sections, ordered the way the
    work flows, so a reader sees the shape of a file before reading a line of it.
 4. **Don't be fancy.** Linear over nested, explicit over implicit, boring over clever.
+5. **Keep simple logic in one place.** Keep the framework's structure and the project's config
+   files, but do not scatter one job across controllers, services, helpers and constants files.
+   A new file is earned by being shared, required by the framework, or architecturally needed.
 
 Examples are given in TypeScript, Python and PHP. The rules apply to any language.
 
